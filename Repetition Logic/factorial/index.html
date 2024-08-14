@@ -1,0 +1,34 @@
+<!-- create a js program using a while loop to find the factorial of a given number. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(n) {
+            if(n < 0){
+                return "Functional is not defined for nagative number";
+            }
+
+            let result = 1;
+            let i = n;
+
+            while (i > 0) {
+                result *=i;
+                i--;
+            }
+
+            return result;
+        }
+
+        let number =  5;
+        console.log(`The factorial of $(number) is ${
+        factorial(number)}`);
+    </script>
+    
+</body>
+</html>
